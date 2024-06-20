@@ -58,7 +58,6 @@ if __name__ == "__main__":
     # grid, start, goal = load_map('maps/test_map.csv')
     # grid, start, goal = load_map('maps/large_map.csv')    
 
-
     # Search
     bfs_path, bfs_steps = bfs(grid, start, goal)
     dfs_path, dfs_steps = dfs(grid, start, goal)

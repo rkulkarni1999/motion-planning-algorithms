@@ -13,11 +13,11 @@ class Node:
 
 def bfs(grid, start, goal):
     '''Return a path found by BFS alogirhm 
-       and the number of steps it takes to find it.
+    and the number of steps it takes to find it.
 
     arguments:
     grid - A nested list with datatype int. 0 represents free space while 1 is obstacle.
-           e.g. a 3x3 2D map: [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
+    e.g. a 3x3 2D map: [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
     start - The start node in the map. e.g. [0, 0]
     goal -  The goal node in the map. e.g. [2, 2]
 
@@ -63,7 +63,6 @@ def bfs(grid, start, goal):
         current_node = queue.pop()
         steps += 1
 
-
         # Condition for finding the goal. If the goal is found, backtrack to get the path.
         if current_node.row == goal[0] and current_node.col == goal[1]:
 
@@ -95,11 +94,11 @@ def bfs(grid, start, goal):
 
 def dfs(grid, start, goal):
     '''Return a path found by DFS alogirhm 
-       and the number of steps it takes to find it.
+    and the number of steps it takes to find it.
 
     arguments:
     grid - A nested list with datatype int. 0 represents free space while 1 is obstacle.
-           e.g. a 3x3 2D map: [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
+    e.g. a 3x3 2D map: [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
     start - The start node in the map. e.g. [0, 0]
     goal -  The goal node in the map. e.g. [2, 2]
 
@@ -173,11 +172,11 @@ def dfs(grid, start, goal):
 
 def astar(grid, start, goal):
     '''Return a path found by A* alogirhm 
-       and the number of steps it takes to find it.
+    and the number of steps it takes to find it.
 
     arguments:
     grid - A nested list with datatype int. 0 represents free space while 1 is obstacle.
-           e.g. a 3x3 2D map: [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
+    e.g. a 3x3 2D map: [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
     start - The start node in the map. e.g. [0, 0]
     goal -  The goal node in the map. e.g. [2, 2]
 
